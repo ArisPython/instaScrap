@@ -26,7 +26,7 @@ while 1:
     try: users = r['data']['shortcode_media']['edge_liked_by']['edges']
     except:
         print('tunggu 20 detik')
-        time.sleep(20)
+        time.sleep(20) #diberi jeda 20 detik, untuk like dengan jumlah puluhan ribu. karena if not, dianggap spam
         continue
     # looping balik ke while disini dengan jeda 20 detik. 1-24, 25-49, dst
 
