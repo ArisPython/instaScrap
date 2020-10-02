@@ -56,5 +56,5 @@ while 1:
         writer.writerow(data)
     end_cursor = r['data']['shortcode_media']['edge_liked_by']['page_info']['end_cursor']
     has_next_page = r['data']['shortcode_media']['edge_liked_by']['page_info']['has_next_page']
-    if has_next_page == False: break
+    if has_next_page == False: break #jika tidak punya hal terakhir maka berhenti
     time.sleep(2)

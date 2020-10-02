@@ -54,7 +54,7 @@ while 1:
 
     end_cursor = r['data']['shortcode_media']['edge_media_to_parent_comment']['page_info']['end_cursor']
     has_next_page = r['data']['shortcode_media']['edge_media_to_parent_comment']['page_info']['has_next_page']
-    if has_next_page == False: break
+    if has_next_page == False: break #jika tidak punya hal terakhir maka berhenti
     time.sleep(2)
 #
 # count = 0
